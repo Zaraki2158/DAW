@@ -1,0 +1,166 @@
+@font-face{
+    font-family: 'Nasa';
+    src: url('../../resources/fonts/nasalization-rg.otf');
+}
+@font-face{
+    font-family: 'CoursesName';
+    src: url('../../resources/fonts/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: 'CoursesDateInsc';
+    src: url('../../resources/fonts/Roboto-MediumItalic.ttf');
+}
+
+@keyframes changeColorLD{
+	0%   { --bgColor: #E3E3E3; }
+	20%  { --bgColor: #C8C8C8; }
+	40%  { --bgColor: #ACACAC; }
+	60%  { --bgColor: #919191; }
+	80%  { --bgColor: #757575; }
+	100% { --bgColor: #3e4c59; }
+}
+@keyframes changeColorDL{
+	0%   { --bgColor: #3e4c59; }
+	20%  { --bgColor: #5a6673; }
+	40%  { --bgColor: #76808e; }
+	60%  { --bgColor: #919cad; }
+	80%  { --bgColor: #adb8c8; }
+	100% { --bgColor: #E3E3E3; }
+}
+
+:root{
+	--bgColor:#E3E3E3;
+	--bgColorHover:#CDCDCD;
+	--primTxtColor:black;
+	--secTxtColor:gray;
+	--thirdColor:gray;
+	--shadowTxtColor:#9b9b9b;
+	--shadowBoxColor:#9b9b9b;
+	--borderColor:gray;
+}
+:root.changeColorAnimDL{
+	animation: changeColorDL 0.2s linear forwards;
+}
+:root.changeColorAnimLD{
+	animation: changeColorLD 0.2s linear forwards;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+/*------------CONTENU DE LA PAGE------------*/
+body{
+	background: var(--bgColor);	
+}
+main{
+	margin-left:270px;
+	margin-top:100px;	
+	right:0;
+}
+section{	
+	margin-right:20px;
+	margin-left:20px;
+	color: var(--primTxtColor);
+}
+fieldset{
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	border:1px outset var(--borderColor);
+}
+fieldset legend{
+	font: 30px "Nasa",sans-serif;
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	opacity:1;	
+	background: var(--bgColor);
+	border-radius:15px;
+	padding:8px;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+button{
+	cursor:pointer;
+}
+/*------------COURS SUIVIS------------*/
+
+#listeCours {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+.choixMat{
+	font: 30px "Nasa",sans-serif;
+	text-align:center;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+#listeCours > div {
+    flex: 0 0 30%; 
+    box-sizing: border-box; 
+	text-align:center;
+}
+
+#listeCours a{
+	text-decoration:none;
+	color: var(--primTxtColor);
+	font: 23px "Nasa",sans-serif;
+	padding:10px;
+}
+#listeCours a:hover{
+	background: var(--bgColorHover);
+}
+
+#bigTitle{
+	font: 60px "Nasa",sans-serif;
+	text-align:center;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+.hrMain{
+	width:95%;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom: 3px outset var(--borderColor);
+}
+input[type=submit],select,button{
+	cursor:pointer;
+}
+#tableModif{
+	width:100%;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+#borderRight{
+	border-left: 3px outset var(--borderColor);
+	padding-left:20px;
+}
+.lienCours{
+	color: var(--primTxtColor);
+	text-decoration:none;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+	padding:10px;
+}
+.lienCours:hover{
+	background:var(--bgColorHover);
+	cursor:pointer;
+}
+.textAJ{
+	padding-left:8px;
+	font: 20px "CoursesName",sans-serif;
+}
+.textAJ2{	
+	font: 20px "CoursesName",sans-serif;
+}
+.buttonForm{
+	background: var(--bgColor);
+	opacity:1;
+	color: var(--primTxtColor);
+	padding:8px;
+	border:none;
+	font: 20px "Nasa",sans-serif;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);	
+}
+.buttonForm:hover{
+	background: var(--bgColorHover);		
+}
+.show{
+  display: block;
+}

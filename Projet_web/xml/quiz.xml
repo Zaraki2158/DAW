@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<quiz>
+
+    <quiz id="1">
+        <title>SystemesEtReseaux</title>
+        <image>reseau2.jpg</image>
+        <question>
+            <text>Durant le premier TP, vous avez install&#xE9; la distribution Debian buster qui
+                correspond &#xE0; la version ....... (1).</text>
+            <answers>
+                <answer correct="false">10</answer>
+                <answer correct="false">11</answer>
+                <answer correct="false">11.5</answer>
+                <answer correct="true">12</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Vous avez cr&#xE9;&#xE9; au moins deux partitions .............. (2) sur le disque
+                dur.</text>
+            <answers>
+                <answer correct="false">ext3</answer>
+                <answer correct="true">ext4</answer>
+                <answer correct="false">ext1</answer>
+                <answer correct="false">ext2</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Vous disposiez de trois interfaces r&#xE9;seau et une se pr&#xE9;nommant lo et que
+                l'on nomme plus commun&#xE9;ment l'interface de ........... en anglais (3) et qui a
+                pour adresse ip : ................. (4).</text>
+            <answers>
+                <answer correct="true">loopback/127.0.0.1</answer>
+                <answer correct="false">backloop/127.0.0.0</answer>
+                <answer correct="false">loopback/127.0.0.0</answer>
+                <answer correct="false">backloop/127.0.0.1</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Pour tester la liaison entre les machines, vous avez utilis&#xE9; la commande
+                .............(5). </text>
+            <answers>
+                <answer correct="false">pong</answer>
+                <answer correct="true">ping</answer>
+                <answer correct="false">pang</answer>
+                <answer correct="false">pung</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Les adresses IP &#xE9;taient configur&#xE9;es sur la machine dans le fichier
+                ..............(6) qui est accessible &#xE0; (chemin complet) ...............(7).</text>
+            <answers>
+                <answer correct="false">interface/ /etc/networks</answer>
+                <answer correct="false">interfaces/ /etc/networks</answer>
+                <answer correct="true">interfaces/ /etc/network</answer>
+                <answer correct="false">interface/ /etc/network</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Dans ce fichier, pour d&#xE9;clarer l'adresse IP, on doit utiliser le mot anglais
+                ............(8) et utiliser le mot-cl&#xE9; .........(9) pour une adresse ip fixe en
+                lieu et place d&#x2019;utiliser le protocole DHCP.</text>
+            <answers>
+                <answer correct="false">ip/dynamic</answer>
+                <answer correct="false">address/dynamic</answer>
+                <answer correct="false">ip/static</answer>
+                <answer correct="true">address/static</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Pour vous aider dans le param&#xE9;trage de ce fichier, vous avez utilis&#xE9; la
+                commande ..............(10). </text>
+            <answers>
+                <answer correct="false">rtab</answer>
+                <answer correct="false">crontab</answer>
+                <answer correct="true">man ifconfig</answer>
+                <answer correct="false">man ftp</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Sur le client, vous disposiez du logiciel graphique .................
+                .............. (deux mots) (11) pour modifier les adresses IP.</text>
+            <answers>
+                <answer correct="false">network ingenner</answer>
+                <answer correct="true">network manager</answer>
+                <answer correct="false">network interface</answer>
+                <answer correct="false">network croner</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Le routage &#xE9;tait actif lorsque l'on pouvait observer un ..... (12) dans le
+                fichier /proc/sys/net/ipv4/ip_forward.</text>
+            <answers>
+                <answer correct="false">2</answer>
+                <answer correct="false">7</answer>
+                <answer correct="false">0</answer>
+                <answer correct="true">1</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Linux utilise un firewall pour se pr&#xE9;munir des attaques ext&#xE9;rieures. Il
+                se nomme ...........(13) et sa commande est ...............(14).</text>
+            <answers>
+                <answer correct="false">filternet/iproute</answer>
+                <answer correct="false">netfilter/iproute</answer>
+                <answer correct="false">filternet/iptables</answer>
+                <answer correct="true">netfilter/iptables</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Pour installer un paquet Debian, j'utilise la commande ............. (15). Je peux
+                aussi utiliser la commande ...........(16) pour installer des applications .deb.</text>
+            <answers>
+                <answer correct="true">apt-get install/dpkg -i</answer>
+                <answer correct="false">dnf/dpkg -i</answer>
+                <answer correct="false">apt-get install/dnf</answer>
+                <answer correct="false">update/update</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Pour faire des sauvegardes avec ....... (17), vous avez du utiliser cron et la
+                commande ......... (18) pour &#xE9;diter celui-ci.</text>
+            <answers>
+                <answer correct="false">rsync/iptables</answer>
+                <answer correct="true">rsync/crontab -e</answer>
+                <answer correct="false">crontab/rsync</answer>
+                <answer correct="false">rsync/iproute</answer>
+            </answers>
+        </question>
+        <question>
+            <text> Le fichier contenant la descriptions des scripts &#xE0; lancer par cron est
+                ............. (19).</text>
+            <answers>
+                <answer correct="false">crontable</answer>
+                <answer correct="false">cronchaise</answer>
+                <answer correct="true">crontab</answer>
+                <answer correct="false">cronmaison</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Le service ............. (20) permet d&#x2019;avoir une trace des applications
+                syst&#xE8;mes dans des journaux (log) situ&#xE9;s dans le r&#xE9;pertoire
+                ............. (21).</text>
+            <answers>
+                <answer correct="false">sysctl/ /var/log</answer>
+                <answer correct="true">journalctl / /log/var</answer>
+                <answer correct="false">/log/var / sysctl</answer>
+                <answer correct="false">je ne sais pas</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quel est le port du protocole ssh ?</text>
+            <answers>
+                <answer correct="false">3630</answer>
+                <answer correct="true">22</answer>
+                <answer correct="false">360</answer>
+                <answer correct="false">80</answer>
+            </answers>
+        </question>
+    </quiz>
+    <quiz id="2">
+        <title>Graphe</title>
+        <image>graphe.jpg</image>
+        <question>
+            <text>Qu'est-ce qu'un graphe ?</text>
+            <answers>
+                <answer correct="false">Une structure de donn&#xE9;es lin&#xE9;aire</answer>
+                <answer correct="true">Un ensemble de sommets reli&#xE9;s par des ar&#xEA;tes</answer>
+                <answer correct="false">Une fonction math&#xE9;matique</answer>
+                <answer correct="false">Un concept de la physique quantique</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Combien de types principaux de graphes existent ?</text>
+            <answers>
+                <answer correct="false">1</answer>
+                <answer correct="false">2</answer>
+                <answer correct="true">3</answer>
+                <answer correct="false">4</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quelle est la diff&#xE9;rence entre un graphe orient&#xE9; et un graphe non
+                orient&#xE9; ?</text>
+            <answers>
+                <answer correct="true">Un graphe orient&#xE9; a des fl&#xE8;ches sur les
+                    ar&#xEA;tes, tandis qu'un graphe non orient&#xE9; n'en a pas.</answer>
+                <answer correct="false">Un graphe non orient&#xE9; est toujours complet, tandis
+                    qu'un graphe orient&#xE9; peut &#xEA;tre incomplet.</answer>
+                <answer correct="false">Un graphe orient&#xE9; a un sommet central, tandis qu'un
+                    graphe non orient&#xE9; n'en a pas.</answer>
+                <answer correct="false">Il n'y a pas de diff&#xE9;rence entre eux.</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Qu'est-ce qu'un cycle dans un graphe ?</text>
+            <answers>
+                <answer correct="true">Un chemin qui traverse chaque sommet exactement une fois et
+                    revient au sommet de d&#xE9;part.</answer>
+                <answer correct="false">Une boucle reliant un sommet &#xE0; lui-m&#xEA;me.</answer>
+                <answer correct="false">Un chemin entre deux sommets.</answer>
+                <answer correct="false"> Une s&#xE9;rie de sommets non connect&#xE9;s entre eux.</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Comment est calcul&#xE9; le degr&#xE9; d'un sommet dans un graphe ?</text>
+            <answers>
+                <answer correct="false">En comptant le nombre de sommets dans le graphe.</answer>
+                <answer correct="false">En comptant le nombre de boucles dans le graphe.</answer>
+                <answer correct="true">En comptant le nombre d'ar&#xEA;tes connect&#xE9;es au
+                    sommet.</answer>
+                <answer correct="false">En comptant le nombre de chemins partant du sommet.</answer>
+            </answers>
+        </question>
+    </quiz>
+    <quiz id="3">
+        <title>DAW</title>
+        <image>daw.png</image>
+        <question>
+            <text>Qu'est-ce que HTML ?</text>
+            <answers>
+                <answer correct="false">Un langage de programmation utilis&#xE9; pour cr&#xE9;er des
+                    pages web dynamiques.</answer>
+                <answer correct="true"> Un langage de balisage utilis&#xE9; pour structurer le
+                    contenu des pages web.</answer>
+                <answer correct="false"> Un langage de style utilis&#xE9; pour rendre les pages web
+                    interactives.</answer>
+                <answer correct="false">Un langage de base de donn&#xE9;es utilis&#xE9; pour stocker
+                    des informations sur un serveur web.</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quelle est la fonction principale de CSS ?</text>
+            <answers>
+                <answer correct="false"> Manipuler les donn&#xE9;es c&#xF4;t&#xE9; serveur.</answer>
+                <answer correct="false">Structurer le contenu d'une page web.</answer>
+                <answer correct="true">Styliser et mettre en forme le contenu d'une page web.</answer>
+                <answer correct="false">G&#xE9;rer les interactions utilisateur c&#xF4;t&#xE9;
+                    client.</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quel langage de programmation est principalement utilis&#xE9; pour ajouter de
+                l'interactivit&#xE9; aux pages web ?</text>
+            <answers>
+                <answer correct="true">JavaScript</answer>
+                <answer correct="false">Python</answer>
+                <answer correct="false">Java</answer>
+                <answer correct="false">Ruby</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quelle est la principale diff&#xE9;rence entre les frameworks frontend et backend
+                ?</text>
+            <answers>
+                <answer correct="false"> Les frameworks frontend sont utilis&#xE9;s pour g&#xE9;rer
+                    les bases de donn&#xE9;es, tandis que les frameworks backend sont utilis&#xE9;s
+                    pour styliser les pages web.</answer>
+                <answer correct="true">Les frameworks frontend sont ex&#xE9;cut&#xE9;s
+                    c&#xF4;t&#xE9; client, tandis que les frameworks backend sont ex&#xE9;cut&#xE9;s
+                    c&#xF4;t&#xE9; serveur.</answer>
+                <answer correct="false"> Les frameworks frontend sont utilis&#xE9;s pour cr&#xE9;er
+                    des interfaces utilisateur, tandis que les frameworks backend sont utilis&#xE9;s
+                    pour structurer le contenu des pages web.</answer>
+                <answer correct="false">Il n'y a pas de diff&#xE9;rence entre eux.</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Quel est l'objectif principal de l'approche "Responsive Web Design" ?</text>
+            <answers>
+                <answer correct="false">Cr&#xE9;er des sites web qui r&#xE9;agissent aux mouvements
+                    de l'utilisateur.</answer>
+                <answer correct="false"> Concevoir des sites web avec des animations interactives.</answer>
+                <answer correct="false"> Optimiser la vitesse de chargement des pages web.</answer>
+                <answer correct="true"> Assurer que les sites web s'adaptent et fonctionnent bien
+                    sur diff&#xE9;rents appareils et tailles d'&#xE9;cran.</answer>
+            </answers>
+        </question>
+    </quiz>
+</quiz>

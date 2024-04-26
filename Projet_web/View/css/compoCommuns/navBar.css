@@ -1,0 +1,64 @@
+/*------------NAVBAR------------*/
+nav{
+	height:100%;
+	width: 270px;
+	position: fixed; 
+	z-index: 9; 
+	top: 50px;
+	left: 0;
+	background: var(--bgColor); 
+	overflow-x: hidden;
+	padding-top: 20px;
+	border-right:3px outset var(--borderColor);
+	text-shadow: 1px 1px 1px var(--shadowTxtColor);
+}
+nav a{
+	text-decoration: none;
+	color: var(--primTxtColor);
+	font: 23px "Nasa",sans-serif;
+	padding: 10px; 
+	text-align: left;
+	margin-left:10px;  
+	margin-right:10px;
+	cursor:pointer;
+	text-shadow: 1px 1px 1px var(--shadowTxtColor);
+}
+nav a:hover{
+	background: var(--bgColorHover);
+}
+nav div{
+	display:flex;
+	flex-direction:column;
+	height:300px;
+}
+nav h2{
+	font: 23px "Nasa",sans-serif;
+	color: var(--primTxtColor);
+	text-align:center;
+	text-shadow: 1px 1px 1px var(--shadowTxtColor);
+}
+#accueilDiv{
+	padding:6px;
+	height:60px;
+}
+#liensForums{
+	display:flex;
+	flex-direction:column;
+	height:300px;
+}
+nav hr{
+	width:95%;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom: 3px outset var(--borderColor);
+}
+#spanAccueil{
+	padding-left:15px;
+}
+
+
+
+
+
+

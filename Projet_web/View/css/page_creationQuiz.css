@@ -1,0 +1,185 @@
+@font-face{
+    font-family: 'Nasa';
+    src: url('../../resources/fonts/nasalization-rg.otf');
+}
+@font-face{
+    font-family: 'CoursesName';
+    src: url('../../resources/fonts/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: 'CoursesDateInsc';
+    src: url('../../resources/fonts/Roboto-MediumItalic.ttf');
+}
+
+@keyframes changeColorLD{
+	0%   { --bgColor: #E3E3E3; }
+	20%  { --bgColor: #C8C8C8; }
+	40%  { --bgColor: #ACACAC; }
+	60%  { --bgColor: #919191; }
+	80%  { --bgColor: #757575; }
+	100% { --bgColor: #3e4c59; }
+}
+@keyframes changeColorDL{
+	0%   { --bgColor: #3e4c59; }
+	20%  { --bgColor: #5a6673; }
+	40%  { --bgColor: #76808e; }
+	60%  { --bgColor: #919cad; }
+	80%  { --bgColor: #adb8c8; }
+	100% { --bgColor: #E3E3E3; }
+}
+
+:root{
+	--bgColor:#E3E3E3;
+	--bgColorHover:#CDCDCD;
+	--primTxtColor:black;
+	--secTxtColor:gray;
+	--thirdColor:gray;
+	--shadowTxtColor:#9b9b9b;
+	--shadowBoxColor:#9b9b9b;
+	--borderColor:gray;
+}
+:root.changeColorAnimDL{
+	animation: changeColorDL 0.2s linear forwards;
+}
+:root.changeColorAnimLD{
+	animation: changeColorLD 0.2s linear forwards;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+/*------------CONTENU DE LA PAGE------------*/
+body{
+	background: var(--bgColor);	
+}
+main{
+	margin-left:270px;
+	margin-top:100px;	
+	right:0;
+}
+section{	
+	margin-right:20px;
+	margin-left:20px;
+	color: var(--primTxtColor);	
+	text-shadow: 1px 1px 1px var(--shadowTxtColor);
+}
+button{
+	cursor:pointer;
+}
+#confirmationExitDiv{
+	display: none;
+	position: fixed; 
+	z-index: 100; 
+	left: 43%;
+	top: 40%;
+	width: 450px;  
+	overflow: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: var(--primTxtColor); 
+	background: var(--thirdColor);
+	border:3px outset var(--borderColor);
+	text-shadow:1px 1px 1px var(--shadowTxtColor);	
+	border-radius:10px;
+	text-align:center;
+	font: 16px "Nasa",sans-serif;	
+}
+#confirmationExitDiv a{
+	text-decoration:none;
+	font: 25px "Nasa",sans-serif;
+	color:red;	
+}
+.show{
+  display: block;
+}
+/*-----------------------------------*/
+h1{
+	font: 60px "Nasa",sans-serif;
+	text-align:center;
+}
+#warning{
+	color: var(--primTxtColor); 
+	font: 20px "CoursesName",sans-serif;
+	padding-bottom:30px;
+}
+#divTitre{
+	
+}
+#divImg {
+	cursor:pointer;
+}
+#divImg >*{
+	cursor:pointer;	
+}
+.divQuestion hr{
+	width:100%;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom: 3px outset var(--borderColor);	
+}
+label{
+	font: 20px "CoursesName",sans-serif;
+}
+input[type="radio"]{
+   accent-color:#FFC660;
+}
+input[type="radio"]:hover{
+   cursor:pointer;
+}
+.divReponses{
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	margin-left:50px;
+}
+#qcmForm span{
+	font: 25px "CoursesName",sans-serif;
+}
+.divReponses label{
+	font: 20px "CoursesDateInsc",sans-serif;
+}
+input[type=text]{
+	width:250px;	
+	background: var(--bgColorHover);
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	opacity:1;
+	color: var(--primTxtColor);
+	padding:8px;
+	border:none;
+	border-radius:15px;
+	font: 17px "CoursesName",sans-serif;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);	
+}
+#saveQuizButton{
+	font: 20px "Nasa",sans-serif;
+	margin-left:10px;
+	border:none;
+	color:var(--primTxtColor);
+	background:var(--bgColor);
+	padding:10px;
+}
+#saveQuizButton:hover{
+	background:var(--bgColorHover);
+	cursor:pointer;
+}
+#ajQestion{
+	font: 20px "Nasa",sans-serif;
+	border:none;
+	background:var(--bgColor);
+	color:var(--primTxtColor);
+	padding:10px;
+	margin-left:-7px;
+}
+#ajQestion:hover{
+	background:var(--bgColorHover);
+}
+#test{
+	font: 200px "Nasa",sans-serif;
+}
+
+
+
+
+
+

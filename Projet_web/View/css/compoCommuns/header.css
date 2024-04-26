@@ -1,0 +1,102 @@
+/*------------HEADER------------*/
+header{
+	background: var(--bgColor);
+	z-index:10; 
+	position: fixed;
+	top: 0;
+	left:0;
+	height:60px;
+	width: 100%;
+	border-bottom:3px outset var(--borderColor);
+}
+header a{
+	float: left;
+	padding: 23.5px 25px;
+	text-decoration: none;
+}
+#logo{
+	color: var(--primTxtColor);
+	margin-left:35px;
+	margin-right:15px;
+	padding: 0 0;
+	font: 50px "Nasa",sans-serif;
+	text-shadow:2px 2px 2px var(--shadowTxtColor);	
+}
+
+/*------------DROPDOWN COMPTE------------*/
+.dropdown{
+	float: right;
+	margin-right:37px;
+	overflow: hidden;
+}
+.dropbtn{
+	cursor: pointer;
+	font-size: 16px;  
+	color: var(--primTxtColor);
+	padding: 0 25px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	border:none;
+	font: 50px "Nasa",sans-serif;	
+	text-shadow:2px 2px 2px var(--shadowTxtColor);	
+}
+.dropdown-content{	
+	display: none;
+	right:50px;
+	font-size:18px;
+	position: absolute;
+	background: var(--bgColor);
+	min-width: 260px;
+	min-height: 227px;
+	box-shadow: 0 8px 16px 0 var(--shadowBoxColor);
+	z-index: 16;
+	border-radius:5px;
+	font: 16px "Nasa",sans-serif;		
+}
+.dropdown-content a{
+	cursor:pointer;	
+	float: none;
+	color: var(--primTxtColor);
+	display: block;
+	padding: 10px; 
+	text-align: left;
+	margin-left:10px;  
+	margin-right:10px;
+	font: 22px "Nasa",sans-serif;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+
+}
+.dropdown-content a:hover{
+	background: var(--bgColorHover);
+	transition: background-color 0.35s ease;
+}
+.spanDrop{
+	padding-left:15px;
+}
+#spanDropDec{
+	padding-left:10px;
+}
+#spanDropTop{
+	display:block;
+	color: var(--primTxtColor);
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+	margin:0.5rem 0.5rem 0 1rem;
+}
+.loginButton{
+	background: transparent;
+	border: none;
+	color: var(--primTxtColor);
+	display: block;
+	font: 22px "Nasa", sans-serif;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	text-align: left;
+	text-shadow: 1px 1px 1px var(--shadowTxtColor);
+	width: 250px;
+}
+.loginButton:hover{
+	background: var(--bgColorHover);
+	transition: background-color 0.35s ease;
+}

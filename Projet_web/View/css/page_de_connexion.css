@@ -1,0 +1,90 @@
+@font-face{
+    font-family: 'Nasa';
+    src: url('../../resources/fonts/nasalization-rg.otf');
+}
+@font-face{
+    font-family: 'Text';
+    src: url('../../resources/fonts/Roboto-Medium.ttf');
+}
+
+:root{
+	--bgColor:#E3E3E3;
+	--bgColorHover:#CDCDCD;
+	--primTxtColor:black;
+	--shadowTxtColor:#9b9b9b;
+	--shadowBoxColor:#9b9b9b;
+	--borderColor:gray;
+}
+
+h1{
+	font: 40px "Nasa",sans-serif;
+	color: var(--primTxtColor);
+	text-shadow:2px 2px 2px var(--shadowTxtColor);		
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+	margin:auto;
+	margin-top:8%;
+    padding: 20px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+	box-shadow: 0 8px 16px 0 var(--shadowBoxColor);
+}
+input[type="text"], select{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	font: 17px "Text",sans-serif;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font: 19px "Text",sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: #7d3d01;
+}
+input[type="password"], select{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	font: 17px "Text",sans-serif;
+}
+a{
+    text-decoration: none;
+	color: var(--primTxtColor);
+    text-decoration: none;
+	font: 15px "Text",sans-serif;
+}
+#noAccount{
+	padding-top:10px;
+}
+a:hover{
+    color: rgb(59, 59, 59);
+}
+.error-message{
+    color: red;
+}
+.succes{
+    color: green;
+}

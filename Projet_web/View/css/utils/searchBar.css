@@ -1,0 +1,16 @@
+#searchInput{
+	float:right;
+	background: var(--bgColor);
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	opacity:1;
+	color: var(--primTxtColor);
+	padding:8px;
+	border:none;
+	border-radius:15px;
+	font: 23px "Nasa",sans-serif;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+	transform: translateY(-55px);
+}
+#searchInput::placeholder{
+	color: var(--secTxtColor);
+}

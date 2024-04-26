@@ -1,0 +1,216 @@
+
+@font-face{
+    font-family: 'Nasa';
+    src: url('../../resources/fonts/nasalization-rg.otf');
+}
+@font-face{
+    font-family: 'CoursesName';
+    src: url('../../resources/fonts/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: 'CoursesDateInsc';
+    src: url('../../resources/fonts/Roboto-MediumItalic.ttf');
+}
+
+:root{
+	--bgColor:#E3E3E3;
+	--bgColorHover:#CDCDCD;
+	--primTxtColor:black;
+	--shadowTxtColor:#9b9b9b;
+	--shadowBoxColor:#9b9b9b;
+	--borderColor:gray;
+}
+
+@keyframes changeColorLD{
+  0% { --bgColor: #E3E3E3; }
+  20% { --bgColor: #C8C8C8; }
+  40% { --bgColor: #ACACAC; }
+  60% { --bgColor: #919191; }
+  80% { --bgColor: #757575; }
+  100% { --bgColor: #3e4c59; }
+}
+@keyframes changeColorDL{
+  0% { --bgColor: #3e4c59; }
+  20% { --bgColor: #5a6673; }
+  40% { --bgColor: #76808e; }
+  60% { --bgColor: #919cad; }
+  80% { --bgColor: #adb8c8; }
+  100% { --bgColor: #E3E3E3; }
+}
+:root.changeColorAnimDL{
+  animation: changeColorDL 0.3s linear forwards;
+}
+:root.changeColorAnimLD{
+  animation: changeColorLD 0.3s linear forwards;
+}
+
+/*------------HEADER------------*/
+header{
+  background: var(--bgColor);
+  z-index:10; 
+  position: fixed;
+  top: 0;
+  left:0;
+  height:60px;
+  width: 100%;
+  border-bottom:3px outset var(--borderColor);
+}
+header a{
+	float: left;
+	padding: 23.5px 25px;
+	text-decoration: none;
+}
+#logo{
+	color: var(--primTxtColor);
+	margin-left:35px;
+	margin-right:15px;
+	padding: 0 0;
+	font: 50px "Nasa",sans-serif;
+	text-shadow:2px 2px 2px var(--shadowTxtColor);	
+}
+
+/*------------DROPDOWN COMPTE------------*/
+.dropdown{
+  float: right;
+  margin-right:37px;
+  overflow: hidden;
+}
+.dropbtn{
+  cursor: pointer;
+  font-size: 16px;  
+  color: var(--primTxtColor);
+  padding: 0 25px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border:none;
+  font: 50px "Nasa",sans-serif;	
+  text-shadow:2px 2px 2px var(--shadowTxtColor);	
+}
+#carret{
+	transform: translateY(5px);
+}
+.dropdown-content{	
+	display: none;
+	font-size:18px;
+	position: absolute;
+	background: var(--bgColor);
+	min-width: 260px;
+	min-height: 355px;
+	box-shadow: 0 8px 16px 0 var(--shadowBoxColor);
+	z-index: 16;
+	border-radius:5px;
+	font: 16px "Nasa",sans-serif;
+	transform: translate(30px,0);	
+}
+.dropdown-content a{	
+  float: none;
+  color: var(--primTxtColor);
+  padding: 10px;  
+  display: block;
+  text-align: left;
+  margin-left:10px;
+	margin-right:10px;
+		font: 22px "Nasa",sans-serif;
+		text-shadow:1px 1px 1px var(--shadowTxtColor);
+		
+}
+.dropdown-content a:hover{
+   background: var(--bgColorHover);
+  transition: background-color 0.2s ease;
+}
+.spanDrop{
+	
+	padding-left:15px;
+}
+#spanDropTop{
+	display:block;
+	color: var(--primTxtColor);
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+	margin:0.5rem 0.5rem 0 1rem;
+}
+.show{
+  display: block;
+}
+
+/*------------NAVBAR------------*/
+nav{
+	height:100%;
+	width: 16%;
+	position: fixed; 
+	z-index: 9; 
+	top: 0;
+	left: 0;
+	background: var(--bgColor); 
+	overflow-x: hidden;
+	padding-top: 20px;
+	border-right:3px outset var(--borderColor);
+  display:flex;
+  flex-direction:column; 
+}
+
+/*------------CONTENU DE LA PAGE------------*/
+button{
+	cursor:pointer;
+}
+body{
+	background: var(--bgColor);
+}
+main{
+	margin-left:16%;
+	margin-top:4.3%;	
+	right:0;
+}
+/*------------COURS SUIVIS------------*/
+section{	
+	margin-right:20px;
+	margin-left:20px;
+	color: var(--primTxtColor);
+}
+section legend{
+	font: 30px "Nasa",sans-serif;
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	opacity:1;	
+	background: var(--bgColor);
+	border-radius:15px;
+	padding:8px;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+fieldset{
+	box-shadow: 0 0 8px var(--shadowBoxColor);
+	border:1px outset var(--borderColor);
+}
+#folCoursesTable{
+	width:100%;
+}
+th{
+	font: 23px "Nasa",sans-serif;
+	padding:5px;
+	text-shadow:1px 1px 1px var(--shadowTxtColor);
+}
+tbody{
+	text-align:left;
+}
+td{
+	padding:10px;
+}
+.courseName{
+	font: 17px "CoursesName",sans-serif;
+	border-right:2px outset var(--borderColor);
+}
+.courseDateInsc{
+	font: 17px "CoursesDateInsc",sans-serif;
+	border-right:2px outset var(--borderColor);
+	text-align:center;
+}
+.courseTime{
+	font: 17px "CoursesDateInsc",sans-serif;
+	text-align:center;
+}
+/*------------COURS RECOMMANDES------------*/
+
+/*------------ ------------*/
+/*------------ ------------*/
+
+
+
